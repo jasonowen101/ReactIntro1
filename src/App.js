@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './Header';
 import ProjectList from './ProjectList';
+import JosiahBlakeman from './JosiahBlakeman';
 
 function App() {
   const projects = [
@@ -12,10 +13,16 @@ function App() {
     { id: 5, name: 'Project E' }
   ];
 
+    const data = [
+      {id: 1, name: 'Deck'},
+      {id: 2, name: 'Roof'}
+    ]
+
   return (
     <div>
       <Header />
       <ProjectList projects={projects} />
+      <JosiahBlakeman data={data} />
     </div>
   );
 }
