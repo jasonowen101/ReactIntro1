@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './Header';
 import ProjectList from './ProjectList';
+import fakeDataObject from './gavinhowell';
 
 function App() {
   const projects = [
@@ -16,6 +17,7 @@ function App() {
     <div>
       <Header />
       <ProjectList projects={projects} />
+      <div>{JSON.stringify(fakeDataObject)}</div>
     </div>
   );
 }
