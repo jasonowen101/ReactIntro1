@@ -8,7 +8,7 @@ function TristianLoomis(props) {
     
     useEffect(() => {
       // Fetch projects from an API
-      setProjects(props.ExampleStuffs);
+      setProjects(props.exampleStuffs);
       // axios.get('https://example.com/api/projects')
       //   .then((response) => setProjects(response.data))
       //   .catch((error) => console.error(error));
