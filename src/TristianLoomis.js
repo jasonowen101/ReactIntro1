@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function TristianLoomis(props) {
     const [exampleStuffs, setProjects] = useState([]);
@@ -17,7 +17,6 @@ function TristianLoomis(props) {
     return (
       <div>
         <h2>Example Project</h2>
-        <MyButton />
         <ul>
           {exampleStuffs.map((project) => (
             <li key={project.id}>{project.projectType} + " " + {project.projectLength} + " " + {project.estCostLabor} + " " + {project.bidPrice} + " " + {project.accepted}</li>
