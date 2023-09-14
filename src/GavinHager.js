@@ -1,3 +1,4 @@
+import React from 'react';
 
 // GavinHager.js
 function GavinHager(){
@@ -13,11 +14,11 @@ function GavinHager(){
         <div>
       <h2>Bogus Project List</h2>
       <ul>
-        {dataList.map((project) => (
-          <li key={project.id}>
-          {"ID: " + project.id}, {"Type: " + project.projectType}, 
-          {"Length: " + project.projectLength}, {"Est. Cost: " + project.estCostLabor}, 
-          {"Bid Price: " + project.bidPrice}, {"Accepted? " + project.accepted}</li>
+        {dataList.map((dataList) => (
+          <li key={dataList.id}>
+          {"ID: " + dataList.id}, {"Type: " + dataList.projectType}, 
+          {"Length: " + dataList.projectLength}, {"Est. Cost: " + dataList.estCostLabor}, 
+          {"Bid Price: " + dataList.bidPrice}, {"Accepted? " + dataList.accepted}</li>
         ))}
       </ul>
     </div>
