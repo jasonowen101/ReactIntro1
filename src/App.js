@@ -3,8 +3,6 @@ import React from 'react';
 import Header from './Header';
 import ProjectList from './ProjectList';
 import SimpleRepeater from './JustinHolder';
-import GavinHager from './GavinHager';
-
 
 function App() {
   const projects = [
@@ -15,12 +13,17 @@ function App() {
     { id: 5, name: 'Project E' }
   ];
 
+  const words = [
+    {id: 1, text: "Test"},
+    {id: 2, text: "Test2"},
+    {id: 3, text: "Test3"}
+  ]
+
   return (
     <div>
       <Header />
-      <SimpleRepeater word="test"/>
+      <SimpleRepeater words={words}/>
       <ProjectList projects={projects} />
-      <GavinHager />
     </div>
   );
 }
