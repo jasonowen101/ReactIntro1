@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './Header';
 import ProjectList from './ProjectList';
+import johnsfunct from './resources/johnervin';
 
 function App() {
   const projects = [
