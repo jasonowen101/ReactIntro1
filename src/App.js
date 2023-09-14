@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './Header';
 import ProjectList from './ProjectList';
+import lukefelisky from './lukefelisky';
 import TristianLoomis from './TristianLoomis';
 import GavinHager from './GavinHager';
 
