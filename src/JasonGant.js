@@ -1,5 +1,3 @@
-var dataPoints = [id, projectType, projectLength, estCostLabor, bidPrice, accepted]
-
 
 return (
     <div>
@@ -16,12 +14,5 @@ return (
       </ul>
     </div>
   );
-
-id = "j47"
-projectType = "React Project"
-projectLength = "48 Hours"
-estCostLabor = 4800
-bidPrice = 6000
-accepted = true
 
 export default JasonGant
