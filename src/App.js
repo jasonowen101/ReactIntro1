@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './Header';
 import ProjectList from './ProjectList';
 import JasonGant from './JasonGant';
+import GavinHager from './GavinHager';
 
 function App() {
   const projects = [
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <ProjectList projects={projects} />
       <JasonGant dataPoints={dataPoints}/>
+      <GavinHager />
     </div>
   );
 }
