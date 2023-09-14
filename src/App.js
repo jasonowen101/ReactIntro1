@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './Header';
 import ProjectList from './ProjectList';
+import MyExample from './MaxThompson';
 import TristianLoomis from './TristianLoomis';
 import GavinHager from './GavinHager';
 
@@ -27,6 +28,9 @@ function App() {
       <GavinHager />
     </div>
   );
+
 }
+
+
 
 export default App;
