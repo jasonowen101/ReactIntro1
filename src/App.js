@@ -4,6 +4,7 @@ import Header from './Header';
 import ProjectList from './ProjectList';
 import TristianLoomis from './TristianLoomis';
 import GavinHager from './GavinHager';
+import DrewAllen from './DrewAllen';
 
 function App() {
   const projects = [
@@ -13,6 +14,7 @@ function App() {
     { id: 4, name: 'Project D' },
     { id: 5, name: 'Project E' }
   ];
+
   const exampleStuffs = [
     { id: 1, projectType: 'New Flooring', projectLength: '2 days', estCostLabor: '$600', bidPrice: '$800', accepted: 'No'},
     { id: 2, projectType: 'New Roofing', projectLength: '3 days', estCostLabor: '$800', bidPrice: '$1200', accepted: 'Yes'},
@@ -25,6 +27,7 @@ function App() {
       <ProjectList projects={projects} />
       <TristianLoomis exampleStuffs={exampleStuffs} />
       <GavinHager />
+      <DrewAllen />
     </div>
   );
 }
