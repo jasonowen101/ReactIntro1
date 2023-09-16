@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './Header';
 import ProjectList from './ProjectList';
+import NoahSternbergComponent from './noahsternberg';
 import TristianLoomis from './TristianLoomis';
 import GavinHager from './GavinHager';
 import DrewAllen from './DrewAllen';
@@ -25,6 +26,7 @@ function App() {
     <div>
       <Header />
       <ProjectList projects={projects} />
+      <NoahSternbergComponent />
       <TristianLoomis exampleStuffs={exampleStuffs} />
       <GavinHager />
       <DrewAllen />
