@@ -1,32 +1,31 @@
 // ProjectList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; // Import Axios
-import MyButton from './MyButton.js';
 
-function CountriesListInfo(props) {
-  const [country, setCountry] = useState([]);
-  useEffect(() => {
-    console.log('useEffect:', country);
-  })
-  
+function CountriesListInfo() {
+  const [country, setCountry] = useState();
+
   useEffect(() => {
     // Fetch from an API
-    setCountry('CN');
-    axios.get('https://restcountries.com/v3/alpha/{' + country + '}')
-      .then((response) => setProjects(response.data))
-      .catch((error) => console.error(error));
-  }, []);
-  console.log('output returned from CN:' + response.data);
+    axios.get('https://datausa.io/api/data?drilldowns=Nation&measures=Population')
+      .then((response) => setCountry(response?.data))
+      .catch((error) => console.error(error?.message));
+  }, [country?.data]);
+
+  if (country?.data)
+  {
   return (
     <div>
-      <h2>Country Information</h2>
-      <MyButton />
-      {/* <ul>
-        {projects.map((project) => (
-          <li key={project.id}>{project.name}</li>
+      <h2>ApiOne: Country Information</h2>
+      <ul>
+        {country.data.map((nation) => (
+          <li key={nation.id}>Nation: {nation.Nation} Year: {nation.Year} Population: {nation.Population}</li>
         ))}
-      </ul> */}
+      </ul>
     </div>
+  );}
+  return (
+    <div>No Country Found</div>
   );
 }
 
