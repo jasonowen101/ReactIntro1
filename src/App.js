@@ -4,6 +4,7 @@ import Header from './Header';
 import ProjectList from './ProjectList';
 import DrewAllen from './DrewAllen';
 import ApiOne from './ApiOne'
+import ParentComponent from './ParentComponent';
 
 function App() {
   const projects = [
@@ -17,10 +18,10 @@ function App() {
   return (
     <div>
       <Header />
+      <ParentComponent />
       <ProjectList projects={projects} />
       <ApiOne />
       <DrewAllen projects={projects}/>
-      
     </div>
   );
 }
